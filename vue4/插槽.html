@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+        <hr>
+        <xuliya>
+            <template #a>
+                <nav>
+                    <a href="">导航1</a>
+                    <a href="">导航2</a>
+                    <a href="">导航3</a>
+                    <a href="">导航4</a>
+                    <a href="">导航5</a>
+                </nav>
+            </template>
+            <h2>main</h2>
+            <h3 slot="b">footer</h3>
+        </xuliya>
+    </div>
+    <template id="child">
+        <div>
+            <slot name="a"></slot>
+            <h1>xuliya</h1>
+            <slot></slot>
+            <h1>xuliya 666</h1>
+            <slot name="b"></slot>
+            <h1>xuliya 555</h1>
+        </div>
+    </template>
+    <script src="./dist/06.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>鼠标修饰符</h1>
+        <button @click.left="say">btn-1</button>
+        <button @click.middle="say">btn-2</button>
+        <button @click.right="say">btn-3</button>
+        <h1>系统键修饰符</h1>
+        <button @click.ctrl="say">btn-4</button>
+        <button @click.shift="say">btn-5</button>
+        <button @click.alt="say">btn-6</button>
+        <button @click.meta="say">btn-7</button>
+        <h1>键盘事件修饰符</h1>
+        <label for="">esc <input type="text" @keydown.esc="xxoo"> </label>
+        <label for="">alt <input type="text" @keydown.alt="xxoo"> </label>
+        <label for="">b <input type="text" @keydown.b="xxoo"> </label>
+        <label for="">+ <input type="text" @keydown.+="xxoo"> </label>
+        <label for="">* <input type="text" @keydown.*="xxoo"> </label>
+        <label for="">delete <input type="text" @keydown.delete="xxoo"> </label>
+
+    </div>
+    <script src="./dist/03.js"></script>
+</body>
+</html>
